@@ -11,14 +11,15 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./font.css" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./hover.css" />
   </head>
-  <body >
+  <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
       <div class="container-fluid">
-        <a class="text-pink navbar-brand" href="#">
+        <a class="text-pink navbar-brand">
           <img
             class="d-inline-block align-text-top logo"
             src="./img/logo.png"
@@ -44,16 +45,21 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ms-auto">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
-            <a class="nav-link" href="#">Layanan</a>
-            <a class="nav-link" href="#">Fitur</a>
-            <a class="nav-link" href="#">Join as Partner</a>
+            <a class="nav-link" href="#layanan">Layanan</a>
+            <a class="nav-link" href="#fitur-kadoin">Fitur</a>
+            <a class="nav-link" href="#join-as-partner">Join as Partner</a>
           </div>
         </div>
       </div>
     </nav>
-    <div class="container" href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+    <div
+      class="container"
+      href="javascript:void(0)"
+      class="closebtn"
+      onclick="closeNav()"
+    >
       <div class="row">
-        <div class="col-md-8 my-auto">
+        <div class="col-md-8 my-auto hero" data-aos="fade-down-right">
           <h1 class="text-head">
             Download <span class="text-pink semiBold">Kadoin</span> dan <br />
             <span class="text-pink semiBold">Temukan Kado Terbaik</span> !
@@ -66,40 +72,192 @@
             <img src="./img/playstore.png" alt="" srcset="" />
           </a>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 hero-image">
           <img
             class="img-fluid app-kadoin"
             src="./img/app_kadoin.png"
             alt=""
             srcset=""
+            data-aos="fade-left"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out"
           />
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid convetti" id="layanan">
+      <div class="popup love">
+        <img src="./img/icon_love.png" alt="" srcset="" />
+        <span class="tooltiptext semiBold">Buat Pacar</span>
+      </div>
+      <div class="popup diamond">
+        <img src="./img/icon_diamond.png" alt="" srcset="" />
+        <span class="tooltiptext semiBold">Perhiasan</span>
+      </div>
+      <div class="popup doll">
+        <img src="./img/icon_doll.png" alt="" srcset="" />
+        <span class="tooltiptext semiBold">Boneka</span>
+      </div>
+      <div class="popup cook">
+        <img src="./img/icon_cook.png" alt="" srcset="" />
+        <span class="tooltiptext semiBold">Oleh-Oleh</span>
+      </div>
+      <div class="popup bunga">
+        <img src="./img/icon_bunga.png" alt="" srcset="" />
+        <span class="tooltiptext semiBold">Bunga</span>
+      </div>
+      <div class="container">
+        <h1 class="text-center medium">Beri Kado Untuk Orang Tersayang!</h1>
+        <p class="text-center medium p-text">
+          KadoIn menyediakan berbagai macam kado, kustomisasi kado, dan jasa
+          bungkus kado!
+        </p>
+      </div>
+    </div>
+
+    <div class="container fitur" id="fitur-kadoin" data-aos="zoom-in" data-aos-duration="1500">
+      <h1 class="medium fitur-title">
+        Bingung pilih kado apa untuk orang tersayang?
+      </h1>
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="light fitur-text">
+            Kadoin mempunyai fitur Find The Best Gift (<span class="bold"
+              >FBG</span
+            >), <span class="bold">FBG</span> merupakan<br />
+            salah satu fitur unggulan dari Kadoin yang dapat memberikan<br />
+            rekomendasi kado terbaik menggunakan machine learning.
+          </h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h1 class="bold text-center">Cara Kerja Kadoin</h1>
+      <div class="container work">
+        <div class="row text-center">
+          <div class="col-md-4 flow-1">
+            <img src="./img/app_kadoin.png" alt="" srcset="" />
+            <h5 class="bold">Download dan Buka Aplikasi Kadoin</h5>
+            <p class="light">
+              Hanya download Kadoin sekarang <br />
+              & nikmati kemudahannya
+            </p>
+          </div>
+          <div class="col-md-4 flow-2">
+            <img src="./img/app_kadoin.png" alt="" srcset="" />
+            <h5 class="bold">Simple-Klik Fitur FBG pada Tabbar</h5>
+            <p class="light">
+              Dengan klik tombol FBG, kamu hanya <br />
+              tinggal mengisi data diri penerima kado
+            </p>
+          </div>
+          <div class="col-md-4">
+            <img src="./img/app_kadoin.png" alt="" srcset="" />
+            <h5 class="bold">Taraa!!</h5>
+            <p class="light">
+              Kadoin akan memberikan rekomendasi <br />
+              kado dan barang siap dibeli
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="join-partner" id="join-as-partner">
+      <div class="container">
+        <div class="row partner">
+          <div class="col-md-8">
+            <h1 class="bold">Bergabung Sebagai Partner</h1>
+            <p class="medium">Mari kembangkan usaha menjadi lebih besar dan tingkatkan penjualan Anda bersama <span class="bold">Kadoin!</span></p>
+            <a href="#" class="text-pink semiBold">Klik Disini</a>
+          </div>
+          <div class="col-md-4">
+            <img src="./img/partner.png" alt="" srcset="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <div class="row footer-about">
+          <div class="col-md-4 text-center">
+            <img class='footer-app fade-left'src="./img/app_kadoin.png" alt="" srcset="">
+          </div>
+          <div class="col-md-8 text-white">
+            <h3 class="bold">Ingat Kado, Ingat Kadoin! </h3>
+            <h4 class="semiBold">Download <span class="bold">Kadoin</span> Sekarang</h4>
+            <a href="" class="footer-ps">
+              <img src="./img/playstore.png" alt="" srcset="" />
+            </a>
+          </div>
+        </div>
+        <hr>
+        <div class="row text-white">
+          <div class="row">
+            <div class="col-md-10">
+              <h4 class="bold">Kadoin</h4>
+              <div class="footer-menu">
+                <a class="text-white semiBold" href="#">Home</a>
+                <a class="text-white" href="#">Promo</a>
+                <a class="text-white" href="#">Artikel</a>
+                <a class="text-white" href="#">Team</a>
+                <a class="text-white" href="#">Contact us</a>
+                <a class="text-white" href="#">FAQ</a>
+                <a class="text-white" href="#">Help Center</a>
+                <a class="text-white" href="#">Career</a>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="row">
+                <div class="col ">
+                  <p class="follow-me semiBold ">Ikuti Kami</p>
+                  <div class="social">
+                    <img src="./img/fb.png" alt="" srcset="">
+                    <img src="./img/insta.png" alt="" srcset="">
+                    <img src="./img/twitter.png" alt="" srcset="">
+                  </div>
+                </div>
+                <div class="col">
+                  
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-        >&times;</a
-      >
-      <a class="semiBold active" href="#">Home</a>
-      <a class="semiBold" href="#">Promo</a>
-      <a class="semiBold" href="#">Artikel</a>
-      <a class="semiBold" href="#">Team</a>
+        ><img src="./img/close.png" alt="" srcset="" width="24" height="24" />
+      </a>
+      <a class="bold active" href="#">Home</a>
+      <a class="bold" href="#">Promo</a>
+      <a class="bold" href="#">Artikel</a>
+      <a class="bold" href="#">Team</a>
 
       <div class="container">
         <hr />
       </div>
-      <a class="semiBold" href="#">Contact Us</a>
-      <a class="semiBold" href="#">FAQ</a>
-      <a class="semiBold" href="#">Help Center</a>
-      <a class="semiBold" href="#">Career</a>
-      
+      <a class="bold" href="#">Contact Us</a>
+      <a class="bold" href="#">FAQ</a>
+      <a class="bold" href="#">Help Center</a>
+      <a class="bold" href="#">Career</a>
+
       <div class="container">
         <hr />
       </div>
-
-      <p class="text-center semiBold"> Social Media</p>
-      
+      <a class="bold" href="#">Join as Partner</a>
+      <br />
+      <p class="text-center semiBold">Social Media</p>
+      <div class="social">
+        <img src="./img/fb.png" alt="" srcset="">
+        <img src="./img/insta.png" alt="" srcset="">
+        <img src="./img/twitter.png" alt="" srcset="">
+      </div>
     </div>
 
     <script
@@ -107,6 +265,7 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       function openNav() {
         document.getElementById("mySidenav").style.width = "370px";
@@ -117,6 +276,7 @@
         document.getElementById("mySidenav").style.width = "0";
         document.body.style.backgroundColor = "white";
       }
+      AOS.init();
     </script>
   </body>
 </html>

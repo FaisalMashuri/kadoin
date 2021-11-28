@@ -5,10 +5,17 @@
         
 }
 
+a {
+    text-decoration: none;
+}
+
 .text-pink {
     color: #FB1A8F !important;
 }
 
+.light {
+    font-weight: 300;
+}
 .semiBold {
     font-weight: 600;
 }

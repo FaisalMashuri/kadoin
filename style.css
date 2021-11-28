@@ -1,3 +1,12 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding:0;
+}
 .container-fluid {
   margin-left: 30px;
 }
@@ -24,6 +33,87 @@
     opacity: 1;
 }
 
+.convetti {
+  font-family: 'Poppins', sans-serif;
+  margin-top: 200px;
+  height: 600px;
+  width: auto;
+  background-image: url("./img/bg_convetti.png");
+  background-size: cover;
+}
+.p-text {
+  margin-top: 30px;
+}
+
+.fitur  {
+  padding-top: 100px;
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+
+.fitur .fitur-title {
+  font-size: 35px !important;
+}
+
+.fitur .fitur-text {
+  margin-top: 40px;
+  font-size: 20px;
+  letter-spacing: 2px;
+
+}
+
+.join-partner {
+  width: auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-image: url('./img/bg-pink.png');
+  /* background-repeat: no-repeat; */
+}
+
+.footer {
+  margin-top: 30px;
+  background-image: url("./img/bg-footer.png");
+  background-size: cover;
+  padding: 150px;
+  padding-bottom: 30px;
+}
+
+.footer hr {
+  background-color: #fff;
+  border-radius: 20px;
+  height: 3px;
+}
+
+.footer-ps {
+  width: 30px;
+}
+
+.footer-menu {
+  display: inline-block;
+}
+
+.footer-menu a {
+  margin: 20px;
+}
+
+.follow-me {
+  font-size: 12px !important;
+}
+
+.social {
+  display: inline-block;
+}
+
+.social img {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+
+/* .footer-about {
+  margin-bottom: 100px;
+} */
+
 @media only screen and (min-width: 768px) {
   /* For desktop: */
   .navbar {
@@ -31,12 +121,13 @@
     padding-bottom: 30px;
   }
   .navbar-brand {
-    font-family: "TerminalDosis", Fallback, sans-serif;
+    font-family: "TerminalDosis", Fallback, sans-serif !important;
   }
 
   .logo {
     margin-top: 10px;
     margin-right: 20px;
+    cursor: pointer;
   }
 
   .navbar-nav {
@@ -58,10 +149,198 @@
     font-size: 25px;
   }
 
-  .kadoPlaystore:hover {
-
+  .hero::before {
+    content: url("./img/baloon_2.png");
+    position: absolute;
+    margin-top: 400px;
   }
 
+  .hero-image::after {
+    content: url('./img/baloon_1.png');
+    position: absolute;
+    margin-top: 700px;
+  }
+
+  .convetti .container  {
+    padding: 200px;
+  }
+
+  .convetti .container h1 {
+    font-size: 35px;
+  }
+
+  .convetti::before {
+    content: url("./img/gift_2.png");
+    position: absolute;
+    margin-top: 530px;
+  }
+  .convetti::after {
+    content: url("./img/gift_1.png");
+    position: absolute;
+    right: 50px;
+  }
+
+  .popup {
+    position: absolute;
+    /* z-index: 1 !important; */
+  }
+
+
+
+  .popup img {
+    width: 90px;
+  }
+
+  .popup .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgba(135, 135, 135, 0.3);
+    text-align: center;
+    top: 20px;
+    padding: 5px 0;
+    border-radius: 6px;
+    margin-left: 20px;
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+  }
+
+  .popup .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: 100%; /* To the left of the tooltip */
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent rgba(135, 135, 135, 0.3) transparent transparent;
+  }
+
+  .popup:hover .tooltiptext {
+    visibility: visible;
+  }
+  .love {
+    margin-top: 150px;
+    margin-left: 200px;
+  }
+
+  .love .tooltiptext {
+    color: #FF7575;
+  }
+
+  .diamond {
+    margin-top: 280px;
+    margin-left: 60px;
+  }
+
+  .diamond img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .diamond .tooltiptext {
+    background-color: rgba(255, 223, 0, 0.3);
+    color: rgb(122, 121, 121);
+  }
+
+  .diamond .tooltiptext::after { 
+    border-color: transparent rgba(255, 223, 0, 0.3) transparent transparent;
+  }
+
+  .doll {
+    margin-top: 450px;
+    margin-left: 250px;
+  }
+
+  .doll img {
+    width: 85px;
+    height: 85px;
+  }
+
+  .doll .tooltiptext {
+    color:#56CCF2 ;
+    background-color: rgba(86, 204, 242,0.3);
+    
+  }
+
+  .doll .tooltiptext::after { 
+    border-color: transparent rgba(86, 204, 242,0.3) transparent transparent;
+  }
+
+  .cook {
+    right: 250px;
+    margin-top: 200px;
+  }
+
+  .cook img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .cook .tooltiptext {
+    color: #6FCF97;
+    background-color: rgba(111, 207, 151, .3);
+  }
+
+  .cook .tooltiptext::after { 
+    border-color: transparent rgba(111, 207, 151, .3) transparent transparent;
+  }
+
+  .bunga {
+    right: 250px;
+    margin-top: 400px;
+  }
+
+  .bunga .tooltiptext {
+    color: #FD80C1;
+    background-color: rgba(253, 128, 193, 0.3);
+  }
+
+  .bunga .tooltiptext::after { 
+    border-color: transparent rgba(253, 128, 193, 0.3) transparent transparent;
+  }
+
+  .fitur::after {
+    content: url("./img/baloon_3.png");
+    position: absolute;
+    right: 300px;
+    margin-top: -90px;
+    transform: rotate(20deg);
+  }
+
+  .work {
+    padding: 100px;
+  }
+
+  .work img {
+    width: 100px;
+  }
+
+  .work h5{ 
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 16px !important ;
+  }
+
+  .flow-1::before {
+    content: url("./img/arrow.png");
+    margin-left: 150px;
+    position: absolute;
+    margin-top: 70px;
+  }
+  .flow-2::before {
+    content: url("./img/arrow.png");
+    margin-left: 150px;
+    position: absolute;
+    margin-top: 70px;
+  }
+
+  .footer .footer-app {
+    width: 250px;
+    position: absolute;
+    margin-top: -300px;
+    margin-left: -100px;
+  }
 }
 
 .sidenav {
@@ -91,13 +370,19 @@
   }
   
   .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+    /* position: absolute; */
+    top: 200px;
+    margin-bottom: 50px;
+
+  }
+
+  .sidenav .social {
+    margin-left: 32%;
   }
   
+  .sidenav .social img {
+    margin:10px
+  }
   #main {
     transition: margin-left .5s;
     padding: 16px;
