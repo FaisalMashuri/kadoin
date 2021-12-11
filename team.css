@@ -1,0 +1,38 @@
+.main-team {
+    margin-bottom: 200px;
+}
+
+.team-head {
+    font-size: 30px !important;
+}
+
+.team-divider {
+width: 100px;
+height: 4px!important;
+}
+
+.team-achive {
+    font-size: 12px;
+}
+
+.team-account-linked {
+    padding-top: 7px;
+    font-size: 16px !important;
+}
+
+.main-team a:hover {
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+
+.team-title {
+    display: none;
+}
+
+
+
+@media screen and (min-width: 450px ) and (max-width:767px) {
+    .team-title {
+        display: block;
+    }
+}

@@ -3,38 +3,44 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin: 0;
-  padding:0;
+  padding: 0;
 }
+
+
 .container-fluid {
   margin-left: 30px;
 }
 .nav-link {
-    font-weight: 600;
-    font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
 }
 .active {
-    color: #FB1A8F !important;
-    font-weight: 700;
+  color: #fb1a8f !important;
+  font-weight: 700;
 }
 .nav-link:hover {
-    color: #FB1A8F !important;
+  color: #fb1a8f !important;
 }
 
 .navbar-brand {
-    font-size: 42px;
+  font-size: 42px;
+}
+
+.logo {
+  cursor: pointer;
 }
 
 .sidenav hr {
-    height: 2px;
-    background-color: #FB1A8F;
-    border-radius: 100px;
-    opacity: 1;
+  height: 2px;
+  background-color: #fb1a8f;
+  border-radius: 100px;
+  opacity: 1;
 }
 
 .convetti {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin-top: 200px;
   height: 600px;
   width: auto;
@@ -45,7 +51,7 @@ body {
   margin-top: 30px;
 }
 
-.fitur  {
+.fitur {
   padding-top: 100px;
   margin-top: 100px;
   margin-bottom: 150px;
@@ -59,14 +65,13 @@ body {
   margin-top: 40px;
   font-size: 20px;
   letter-spacing: 2px;
-
 }
 
 .join-partner {
   width: auto;
   padding-top: 100px;
   padding-bottom: 100px;
-  background-image: url('./img/bg-pink.png');
+  background-image: url("./img/bg-pink.png");
   /* background-repeat: no-repeat; */
 }
 
@@ -110,6 +115,59 @@ body {
   height: 20px;
 }
 
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #000;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #fb1a8f;
+}
+
+.sidenav .closebtn {
+  /* position: absolute; */
+  top: 200px;
+  margin-bottom: 50px;
+}
+
+.sidenav .social {
+  margin-left: 32%;
+}
+
+.sidenav .social img {
+  margin: 10px;
+}
+#main {
+  transition: margin-left 0.5s;
+  padding: 16px;
+}
+
+.about_text_child {
+  font-size: 16px;
+}
+
+.convetti .img-fluid {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
 /* .footer-about {
   margin-bottom: 100px;
 } */
@@ -127,7 +185,10 @@ body {
   .logo {
     margin-top: 10px;
     margin-right: 20px;
-    cursor: pointer;
+  }
+
+  .hero-kadoin {
+    text-align: left;
   }
 
   .navbar-nav {
@@ -135,17 +196,17 @@ body {
   }
 
   .nav-link {
-      margin-right: 120px;
+    margin-right: 120px;
   }
 
   .text-head {
-      font-family: 'Poppins', sans-serif;
-      font-weight: 500;
-      font-size: 50px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 50px;
   }
 
   .desc-head {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 25px;
   }
 
@@ -156,12 +217,12 @@ body {
   }
 
   .hero-image::after {
-    content: url('./img/baloon_1.png');
+    content: url("./img/baloon_1.png");
     position: absolute;
     margin-top: 700px;
   }
 
-  .convetti .container  {
+  .convetti .container {
     padding: 200px;
   }
 
@@ -178,14 +239,13 @@ body {
     content: url("./img/gift_1.png");
     position: absolute;
     right: 50px;
+    margin-top: -100px;
   }
 
   .popup {
     position: absolute;
     /* z-index: 1 !important; */
   }
-
-
 
   .popup img {
     width: 90px;
@@ -225,11 +285,11 @@ body {
   }
 
   .love .tooltiptext {
-    color: #FF7575;
+    color: #ff7575;
   }
 
   .diamond {
-    margin-top: 280px;
+    margin-top: 350px;
     margin-left: 60px;
   }
 
@@ -243,12 +303,12 @@ body {
     color: rgb(122, 121, 121);
   }
 
-  .diamond .tooltiptext::after { 
+  .diamond .tooltiptext::after {
     border-color: transparent rgba(255, 223, 0, 0.3) transparent transparent;
   }
 
   .doll {
-    margin-top: 450px;
+    margin-top: 650px;
     margin-left: 250px;
   }
 
@@ -258,13 +318,12 @@ body {
   }
 
   .doll .tooltiptext {
-    color:#56CCF2 ;
-    background-color: rgba(86, 204, 242,0.3);
-    
+    color: #56ccf2;
+    background-color: rgba(86, 204, 242, 0.3);
   }
 
-  .doll .tooltiptext::after { 
-    border-color: transparent rgba(86, 204, 242,0.3) transparent transparent;
+  .doll .tooltiptext::after {
+    border-color: transparent rgba(86, 204, 242, 0.3) transparent transparent;
   }
 
   .cook {
@@ -278,25 +337,25 @@ body {
   }
 
   .cook .tooltiptext {
-    color: #6FCF97;
-    background-color: rgba(111, 207, 151, .3);
+    color: #6fcf97;
+    background-color: rgba(111, 207, 151, 0.3);
   }
 
-  .cook .tooltiptext::after { 
-    border-color: transparent rgba(111, 207, 151, .3) transparent transparent;
+  .cook .tooltiptext::after {
+    border-color: transparent rgba(111, 207, 151, 0.3) transparent transparent;
   }
 
   .bunga {
-    right: 250px;
-    margin-top: 400px;
+    right: 180px;
+    margin-top: 500px;
   }
 
   .bunga .tooltiptext {
-    color: #FD80C1;
+    color: #fd80c1;
     background-color: rgba(253, 128, 193, 0.3);
   }
 
-  .bunga .tooltiptext::after { 
+  .bunga .tooltiptext::after {
     border-color: transparent rgba(253, 128, 193, 0.3) transparent transparent;
   }
 
@@ -316,7 +375,7 @@ body {
     width: 100px;
   }
 
-  .work h5{ 
+  .work h5 {
     margin-top: 30px;
     margin-bottom: 10px;
     font-size: 16px !important ;
@@ -341,54 +400,36 @@ body {
     margin-top: -300px;
     margin-left: -100px;
   }
+
+  
+  .logo_title {
+    margin-top: 0!important;
+  }
 }
 
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #fff;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
+
+
+@media screen and (min-width: 450px ) and (max-width:767px) {
+  .sidenav {
+    padding-top: 15px;
   }
-  
   .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 16px;
-    color: #000;
-    display: block;
-    transition: 0.3s;
+    font-size: 18px;
   }
-  
-  .sidenav a:hover {
-    color: #FB1A8F;
-  }
-  
-  .sidenav .closebtn {
-    /* position: absolute; */
-    top: 200px;
-    margin-bottom: 50px;
-
+  .logo_title {
+    margin-top: -10px;
   }
 
-  .sidenav .social {
-    margin-left: 32%;
+  .hero-kadoin {
+    text-align: center;
   }
-  
-  .sidenav .social img {
-    margin:10px
+
+  .popup {
+    display: none;
   }
-  #main {
-    transition: margin-left .5s;
-    padding: 16px;
+
+  .convetti {
+    margin-bottom: 450px;
   }
-  
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }
+
+}
