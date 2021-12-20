@@ -1,0 +1,101 @@
+/* Style the search field */
+form.example input[type="text"] {
+  padding: 20px;
+  font-size: 17px;
+  border: 0.5px solid rgb(211, 211, 211);
+  float: left;
+  width: 80%;
+  background: white;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  height: 50px;
+}
+
+.example input::placeholder {
+  color: #dfdfdf !important;
+  font-size: 12px;
+}
+
+.example input[type="text"]:focus {
+  outline: none !important;
+  /* border-left: 0.5px solid #FB1A8F !important;
+    border-top: 0.5px solid #FB1A8F !important;
+    border-bottom: 0.5px solid #FB1A8F !important; */
+}
+.example input[type="text"]:focus form.example button {
+  outline: none !important;
+  border-left: 0.5px solid #fb1a8f !important;
+  border-top: 0.5px solid #fb1a8f !important;
+  border-bottom: 0.5px solid #fb1a8f !important;
+}
+
+/* Style the submit button */
+form.example button {
+  float: left;
+  width: 20%;
+  background: white;
+  color: white;
+  font-size: 17px;
+  border: 0.5px solid rgb(211, 211, 211);
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  height: 50px;
+}
+
+form.example button:hover {
+  background: #fb1a8f;
+  color: white !important;
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.subscribe-article {
+    background: url('./img/article_background.png');
+    background-size: cover;
+    padding: 30px;
+    margin-bottom: 300px !important;
+    font-family: "Poppins", sans-serif !important;
+}
+
+.subscribe-article form.example input[type="text"] {
+    width: 30%;
+    float: left;
+}
+
+.subscribe-article form.example button {
+    float: left;
+}
+
+subscribe-article .example input[type="text"] {
+    width: 20%;
+}
+
+subscribe-article .example button:hover {
+    background: white !important;
+    color: white !important;
+  }
+
+@media only screen and (min-width: 768px) {
+    .subscribe-article .row{
+        margin-top: 120px;
+    }
+    .subscribe-article form.example input[type="text"] {
+        margin-left: 25%;
+    }
+}
+
+@media screen and (min-width: 450px ) and (max-width:767px) {
+    .subscribe-article .row{
+        margin-top: 150px;
+    }
+    subscribe-article .example input[type="text"] {
+        width: 100% !important;
+    }
+}

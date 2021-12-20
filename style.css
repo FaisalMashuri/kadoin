@@ -168,6 +168,20 @@ body {
   margin-bottom: 50px;
 }
 
+.button-pink {
+  /* padding-left:20px;
+  padding-right:20px; */
+  background-color: #fb1a8f;
+  height: 50px;
+  border-radius: 40px;
+  color: white;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  width: 250px;
+  letter-spacing: 2px;
+}
+
 /* .footer-about {
   margin-bottom: 100px;
 } */

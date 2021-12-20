@@ -27,3 +27,7 @@ a {
 .bold {
     font-weight: 700;
 }
+
+.fontSpartan {
+    font-family: 'spartan';
+}
