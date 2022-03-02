@@ -57,21 +57,32 @@ form.example::after {
 }
 
 .subscribe-article {
-    background: url('./img/article_background.png');
+  margin-top: 150px;
+  background-color: #fb1a8f;
+    /* background: url('./img/article_background.png'); */
     background-size: cover;
-    padding: 30px;
+    padding-bottom: 50px;
+    padding-top: 50px;
     margin-bottom: 300px !important;
     font-family: "Poppins", sans-serif !important;
+    border-radius: 30px;
+}
+
+
+.subscribe-article h4 {
+  font-size: 20px;
 }
 
 .subscribe-article form.example input[type="text"] {
     width: 30%;
-    float: left;
+    margin-left: 30%;
+    /* float: left; */
 }
-
 .subscribe-article form.example button {
     float: left;
+    width: 100px;
 }
+/*
 
 subscribe-article .example input[type="text"] {
     width: 20%;
@@ -80,22 +91,31 @@ subscribe-article .example input[type="text"] {
 subscribe-article .example button:hover {
     background: white !important;
     color: white !important;
-  }
+  } */
 
 @media only screen and (min-width: 768px) {
-    .subscribe-article .row{
-        margin-top: 120px;
-    }
-    .subscribe-article form.example input[type="text"] {
+    /* .subscribe-article form.example input[type="text"] {
         margin-left: 25%;
     }
+    */
+    .subscribe-article .row::before {
+      content: url("./img/Active.png");
+      position: absolute;
+      display: block;
+      -webkit-transform: translateY(-270px) translateX(250px) scale(0.2);
+      -moz-transform: translateY(-270px) translateX(250px) scale(0.2);
+    } 
 }
 
 @media screen and (min-width: 450px ) and (max-width:767px) {
-    .subscribe-article .row{
-        margin-top: 150px;
-    }
-    subscribe-article .example input[type="text"] {
+    /* subscribe-article .example input[type="text"] {
         width: 100% !important;
     }
+    .subscribe-article .row::before{
+      content: url("./img/Active.png");
+      position: absolute;
+      display: block;
+      -webkit-transform: translateY(-270px) translateX(15%) scale(0.2) !important;
+      -moz-transform: translateY(-270px) translateX(15%) scale(0.2) o !important;
+    } */
 }
