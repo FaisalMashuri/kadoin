@@ -46,4 +46,5 @@
 
 .faq-ask .accordion-header button {
     font-size: 18px;
+    position: absolute;
 }

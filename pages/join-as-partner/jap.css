@@ -85,5 +85,34 @@
     outline: none;
     border: none;
     letter-spacing: 2px;
-  }
+}
+
+
+
+@media only screen and (min-width: 768px) {
+    .regis-jap::before {
+        content: url('../../img/love-bubble.png');
+        position: absolute;
+        -webkit-transform: translateY(-450px) translateX(-900px) scale(0.2) !important;
+        -moz-transform: translateY(-450px) translateX(-900px) scale(0.2) o !important;
+    }
+    .regis-jap::after {
+        content: url('../../img/love-bubble-2.png');
+        position: absolute;
+        -webkit-transform: translateY(-200px) translateX(200px) scale(0.15) !important;
+        -moz-transform: translateY(-200px) translateX(200px) scale(0.15) !important;
+    }
+}
+
+@media screen and (min-width: 450px ) and (max-width:767px) {
+    /* subscribe-article .example input[type="text"] {
+        width: 100% !important;
+    }
+    .subscribe-article .row::before{
+      content: url("./img/Active.png");
+      position: absolute;
+      display: block;
+      -webkit-transform: translateY(-270px) translateX(15%) scale(0.2) !important;
+      -moz-transform: translateY(-270px) translateX(15%) scale(0.2) o !important;
+    } */
 }
