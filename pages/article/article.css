@@ -103,7 +103,7 @@ subscribe-article .example button:hover {
     }
     */
     .subscribe-article .row::before {
-      content: url("./img/Active.png");
+      content: url("../../img/Active.png");
       position: absolute;
       display: block;
       -webkit-transform: translateY(-270px) translateX(250px) scale(0.2);

@@ -7,13 +7,13 @@
 }
 
 .faq-hero::before {
-  content: url("./img/baloon_2.png");
+  content: url("../../img/baloon_2.png");
   position: absolute;
   margin-top: -100px;
 }
 
 .faq-hero::after {
-  content: url("./img/baloon_1.png");
+  content: url("../../img/baloon_1.png");
   position: absolute;
   right: 200px;
   margin-top: -100px;
@@ -30,7 +30,7 @@
 }
 
 .faq-ask::before {
-    content: url('./img/Active.png');
+    content: url('../../img/Active.png');
     position: absolute;
     transform: scale(.3);
     left: 25%;

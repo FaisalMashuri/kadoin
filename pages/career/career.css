@@ -1,0 +1,65 @@
+.career-header h2 {
+    font-size: 32px !important;
+}
+
+.career-header p {
+    font-size: 24px;
+}
+
+form.example input[type="text"] {
+    padding: 20px;
+    font-size: 17px;
+    border: 0.5px solid rgb(211, 211, 211);
+    float: left;
+    width: 80%;
+    background: white;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    height: 30px;
+  }
+  
+  .example input::placeholder {
+    color: #dfdfdf !important;
+    font-size: 12px;
+  }
+  
+  .example input[type="text"]:focus {
+    outline: none !important;
+    /* border-left: 0.5px solid #FB1A8F !important;
+      border-top: 0.5px solid #FB1A8F !important;
+      border-bottom: 0.5px solid #FB1A8F !important; */
+  }
+  .example input[type="text"]:focus form.example button {
+    outline: none !important;
+    border-left: 0.5px solid #fb1a8f !important;
+    border-top: 0.5px solid #fb1a8f !important;
+    border-bottom: 0.5px solid #fb1a8f !important;
+  }
+  
+  /* Style the submit button */
+  form.example button {
+    float: left;
+    width: 15%;
+    background: white;
+    color: white;
+    font-size: 17px;
+    border: 0.5px solid rgb(211, 211, 211);
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 41px;
+  }
+  
+  form.example button:hover {
+    background: #fb1a8f;
+    color: white !important;
+  }
+  
+  /* Clear floats */
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
