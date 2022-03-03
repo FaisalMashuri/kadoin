@@ -1,3 +1,6 @@
+.career-header {
+    margin-bottom: 100px;
+}
 .career-header h2 {
     font-size: 32px !important;
 }
@@ -62,4 +65,26 @@ form.example input[type="text"] {
     clear: both;
     display: table;
   }
-  
+
+
+.job-section h3 {
+    font-size: 24px;
+}
+
+
+
+.job-section-title {
+    margin-bottom: 100px !important;
+}
+
+.job-card {
+    margin-bottom: 100px;
+}
+
+.joblist-title {
+    font-size: 25px;
+}
+
+.joblist-opport {
+    font-size:18px;
+}
