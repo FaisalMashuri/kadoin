@@ -1,0 +1,89 @@
+.career-header {
+    margin-bottom: 100px;
+}
+.career-header h2 {
+    font-size: 32px !important;
+}
+
+.career-header p {
+    font-size: 24px;
+}
+
+
+.benefit {
+    margin-top: 200px !important;
+    margin-bottom: 300px;
+}
+
+.benefit-list-section {
+    margin-top: 100px !important ;
+}
+
+.benefit-list-section img {
+    width: 200px;
+    margin-bottom: 30px;
+}
+
+.benefit-list-section h5 {
+    font-size: 16px;
+}
+
+.benefit-list-section p {
+    font-size: 14px;
+}
+
+.benefit-img-3 {
+    width: 150px !important;
+}
+
+.flow-jap {
+    margin-bottom: 300px;
+}
+
+.regis-jap {
+    margin-bottom: 300px;
+}
+
+.regis-jap h6 {
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+
+.regis-jap .col-12 {
+    margin-bottom: 10px !important;
+}
+
+.regis-jap a {
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 20px;    
+}
+
+.regis-jap .button-pink {
+    width: auto !important;
+}
+
+.regis-jap .button-pink:hover {
+    background-color: #fff;
+    border: 2px solid black;
+    border-color: #fb1a8f;
+    border-radius: 40px;
+    color: #fb1a8f;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+.regis-jap .button-outline-pink {
+    padding-bottom: 15px !important; 
+}
+
+.regis-jap .button-outline-pink:hover {
+    background-color: #fb1a8f;
+    border-radius: 40px;
+    color: white !important;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    letter-spacing: 2px;
+  }
+}
